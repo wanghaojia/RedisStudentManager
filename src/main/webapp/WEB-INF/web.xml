@@ -1,0 +1,64 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	
+
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>InsertResultServlet</servlet-name>
+		<servlet-class>com.biz.servlet.InsertResultServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>InfoServlet</servlet-name>
+		<servlet-class>com.biz.servlet.InfoServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DeleteServlet</servlet-name>
+		<servlet-class>com.biz.servlet.DeleteServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpDateServlet</servlet-name>
+		<servlet-class>com.biz.servlet.UpDateServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UpDateResultServlet</servlet-name>
+		<servlet-class>com.biz.servlet.UpDateResultServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>InsertResultServlet</servlet-name>
+		<url-pattern>/insertResult</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>InfoServlet</servlet-name>
+		<url-pattern>/info</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DeleteServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpDateServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>UpDateResultServlet</servlet-name>
+		<url-pattern>/updateResult</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>info</welcome-file>
+	</welcome-file-list>
+
+</web-app>
